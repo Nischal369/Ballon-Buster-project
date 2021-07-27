@@ -89,7 +89,7 @@ function redBalloon() {
   var red = createSprite(0,Math.round(random(20, 370)), 10, 10);
   red.addImage(red_balloonImage);
   red.velocityX = 3;
-  red.lifetime = 150;
+  red.lifetime = 1;
   red.scale = 0.1;
   if (arrow is touching red){
   red.destroy;
@@ -100,7 +100,7 @@ function blueBalloon() {
   var blue = createSprite(0,Math.round(random(20, 370)), 10, 10);
   blue.addImage(blue_balloonImage);
   blue.velocityX = 3;
-  blue.lifetime = 150;
+  blue.lifetime = 1;
   blue.scale = 0.1;
   if (arrow is touching blue){
   blue.destroy;
@@ -111,7 +111,7 @@ function greenBalloon() {
   var green = createSprite(0,Math.round(random(20, 370)), 10, 10);
   green.addImage(green_balloonImage);
   green.velocityX = 3;
-  green.lifetime = 150;
+  green.lifetime = 1;
   green.scale = 0.1;
   if (arrow is touching green){
   green.destroy;
@@ -122,7 +122,7 @@ function pinkBalloon() {
   var pink = createSprite(0,Math.round(random(20, 370)), 10, 10);
   pink.addImage(pink_balloonImage);
   pink.velocityX = 3;
-  pink.lifetime = 150;
+  pink.lifetime = 1;
   pink.scale = 1;
   if (arrow is touching pink){
   pink.destroy;
