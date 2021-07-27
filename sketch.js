@@ -80,6 +80,9 @@ function draw() {
   arrow.velocityX = -4;
   arrow.lifetime = 100;
   arrow.scale = 0.3;
+  if (arrow is touching red || blue || green || pink){
+  score+1;
+  }
 }
 
 function redBalloon() {
@@ -88,6 +91,9 @@ function redBalloon() {
   red.velocityX = 3;
   red.lifetime = 150;
   red.scale = 0.1;
+  if (arrow is touching red){
+  red.destroy;
+  }
 }
 
 function blueBalloon() {
@@ -96,6 +102,9 @@ function blueBalloon() {
   blue.velocityX = 3;
   blue.lifetime = 150;
   blue.scale = 0.1;
+  if (arrow is touching blue){
+  blue.destroy;
+  }
 }
 
 function greenBalloon() {
@@ -104,6 +113,9 @@ function greenBalloon() {
   green.velocityX = 3;
   green.lifetime = 150;
   green.scale = 0.1;
+  if (arrow is touching green){
+  green.destroy;
+  }
 }
 
 function pinkBalloon() {
@@ -111,5 +123,8 @@ function pinkBalloon() {
   pink.addImage(pink_balloonImage);
   pink.velocityX = 3;
   pink.lifetime = 150;
-  pink.scale = 1
+  pink.scale = 1;
+  if (arrow is touching pink){
+  pink.destroy;
+  }
 }
