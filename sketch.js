@@ -61,7 +61,7 @@ function draw() {
       greenBalloon();
     } else if (select_balloon == 3) {
       blueBalloon();
-    } else if {select_balloon == 4) {
+    } else 
       pinkBalloon();
     }
   }  
