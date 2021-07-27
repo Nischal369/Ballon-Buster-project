@@ -81,7 +81,7 @@ function draw() {
   arrow.lifetime = 100;
   arrow.scale = 0.3;
   if (arrow is touching red || blue || green || pink){
-  score+1;
+  Score=10+score;
   }
 }
 
